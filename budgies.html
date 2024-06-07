@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budgies</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function whenClicked(){
+            let img = document.body.style.backgroundImage;
+            var button = document.getElementById("sakura");
+            if(img == 'url("bg.webp")'){
+                document.body.style.backgroundImage = 'url("giphy.webp"), url("bg.webp")';
+                button.innerHTML = 'Stop Falling';
+            } else {
+                document.body.style.backgroundImage = "url('bg.webp')";
+                button.innerHTML = 'Start Falling';
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="header">    
+    <button id="sakura" type="button" onclick="whenClicked()">Stop Falling</button> 
+    <h1 class="welcome" style="color: yellowgreen; text-shadow: 2px 2px green;" >Budgies</h1>    
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <ul>
+                <li id="lonely"><u>Links</u></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="budgies.html">Budgies</a></li>
+                <li><a href="japan.html">Japan Trip</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="column right">
+        <h2><u>Budgies!!!!</u></h2>
+        <p>
+            I have four budgies/parakeets. Starting from left to right, its Cookie, Lemon, Melon, and Blue. Our youngest is Cookie
+            and she is the feistiest one out of the four. Melon and Blue are the two older brothers that are always fighting/playing with 
+            one another. Then we have our sweet boy Lemon, who is the calmest of the four. They all are mischief in their own way, but I still
+            love them all. They are hard to take care of, but its very rewarding and fun. Unexpectedly I wouldn't call them beginner pets,
+            however if you don't mind the noise and the mess they make, they are very cool pets. When I got my first budgie(Blue), it was
+            very spontaneous and I very much don't recommend it, because they require constant attention and make a lot of noise and mess.
+            At first I was very annoyed at them, but they soon grew on me and are now a very wonderful part of the family.
+
+        </p>
+    </div>
+
+    <div class="meme">
+        <img src="mybudgies.jpg" alt="Budgies" width="1000" height="500" />
+        <img src="meme3.webp" alt="meme" width="1000" height="1000" />
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>-Added two media queries that change font size and such when resolution changes.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

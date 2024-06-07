@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trip to Japan</title>
+    <link rel="stylesheet" href="style2.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function whenClicked(){
+            let img = document.body.style.backgroundImage;
+            var button = document.getElementById("sakura");
+            if(img == 'url("bg.webp")'){
+                document.body.style.backgroundImage = 'url("giphy.webp"), url("bg.webp")';
+                button.innerHTML = 'Stop Falling';
+            } else {
+                document.body.style.backgroundImage = "url('bg.webp')";
+                button.innerHTML = 'Start Falling';
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="header">    
+    <button id="sakura" type="button" onclick="whenClicked()">Stop Falling</button> 
+    <h1 class="welcome">Trip to Japan</h1>    
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <ul>
+                <li id="lonely"><u>Links</u></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="budgies.html">Budgies</a></li>
+                <li><a href="japan.html">Japan Trip</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="column right">
+        <h2>ようこそ！！</h2>
+        <p>
+            I went on a solo trip to Japan a few years ago before covid, when I found a cheap ticket to go over there. My first few hours 
+            there was nerve racking and honestly terrifying. Before I got off the plane, my phone broke. I couldn't find the wifi device
+            that I had delivered to the airport and to make matters worse I couldn't find my airbnb. I had to stay in a hotel nearby the 
+            airport for a day to fix my phone and find my package. I was able to do both and in the end was able to enjoy my stay in Japan.
+            I went to many different shops and restaurants during my stay and it was honestly the most fun I ever had. The people were very
+            nice about the fact I didn't speak japanese at the time. They were very accommodating and honestly some of the nicest people I met.
+            I ended up taking Japanese language classes because of this experience and it was the most fun I ever had during my time in college.
+        </p>
+    </div>
+
+    <div class="pics">
+        <img src="takoyaki.JPG" alt="Takoyaki" height="500"/>
+        <div class="desc">
+            <p>This is takoyaki. It's made with octopus.<br>Trust me its good.</p>
+        </div>
+    </div>
+
+    <div class="pics">
+        <img src="ramen.JPG" alt="Ramen" height="500"/>
+        <div class="desc">
+            <p>Some of the best ramen I had from a<br> random shop I found walking around.</p>
+        </div>
+    </div>
+
+    <div class="pics">
+        <img src="tempura.JPG" alt="Tempura" height="500"/>
+        <div class="desc">
+            <p>This is Tempura with miso soup. Basically fried fish and <br>fried vegetables. Really nice comfort food.</p>
+        </div>
+    </div>
+
+    <div class="pics">
+        <img src="crepe.JPG" alt="Crepe"  height="500"/>
+        <div class="desc">
+            <p>A beautiful crepe I had in Japan.<br>It tasted as good as it looks.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+        <p>-Added two media queries that change font size and such when resolution changes</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

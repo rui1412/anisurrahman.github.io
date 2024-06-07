@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function whenClicked(){
+            let img = document.body.style.backgroundImage;
+            var button = document.getElementById("sakura");
+            if(img == 'url("bg.webp")'){
+                document.body.style.backgroundImage = 'url("giphy.webp"), url("bg.webp")';
+                button.innerHTML = 'Stop Falling';
+            } else {
+                document.body.style.backgroundImage = "url('bg.webp')";
+                button.innerHTML = 'Start Falling';
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">    
+        <button id="sakura" type="button" onclick="whenClicked()">Stop Falling</button> 
+        <h1 class="welcome">Homepage</h1>    
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <ul>
+                    <li id="lonely"><u>Links</u></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="budgies.html">Budgies</a></li>
+                    <li><a href="japan.html">Japan Trip</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column right">
+            <h2><u>Welcome to my Page!</u></h2>
+            <p>
+                Hey guys!!! My name is Anisur and I'm currently a senior. I'm currently working on my computer science degree
+                and trying to making friends along the way. I love playing video games and watching anime.
+                I watch all sorts of animes and I don't have a particular favorite anime series. I love them all.
+                I play a wide range of games, including dark souls games such as elden ring, playing/reading visual novels, and playing indie games.
+                I mainly play indie games, but my most played game is old school runescape. My favorite game/series is the zero escape series.
+                I have finished all the achivements on all three games. The zero escape games/series is a visual novel puzzle game, where you solve
+                puzzles in order to escape. I love puzzles and all things that you can build such as gundams and the ROKR puzzles.
+                It's always fun and exciting building/solving things, which is why I'm majoring in computer science, since I love
+                creating/building things.
+            </p>
+            
+        </div>
+
+        <div class="meme">
+            <img src="meme2.PNG" alt="meme2:electric boogaloo"  width="1000" height="1000"/>
+            <div class="desc">
+                <p>I love computer science but sometimes it gets tiring</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+            <p>-Added two media queries that change font size and such when resolution changes.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
